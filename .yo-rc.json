@@ -1,0 +1,40 @@
+{
+  "generator-jhipster": {
+    "applicationType": "monolith",
+    "gitCompany": "",
+    "baseName": "GTBee",
+    "packageName": "com.sivh.gtbee",
+    "packageFolder": "com/sivh/gtbee",
+    "serverPort": 8081,
+    "serviceDiscoveryType": false,
+    "authenticationType": "session",
+    "uaaBaseName": "../uaa",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "enableSwaggerCodegen": false,
+    "messageBroker": false,
+    "buildTool": "maven",
+    "useSass": false,
+    "clientPackageManager": "npm",
+    "testFrameworks": [],
+    "enableTranslation": true,
+    "nativeLanguage": "de",
+    "languages": [
+      "en",
+      "de"
+    ],
+    "clientFramework": "angularX",
+    "jhiPrefix": "jhi",
+    "jhipsterVersion": "5.7.2",
+    "rememberMeKey": "81c525f0916be18babcbe3f0bbf337bc99d48419341d13e0fd16e6d3716468607a63bbf4e518982e6b6408ad61f63d07ac0d",
+    "otherModules": []
+  },
+  "git-provider": "GitHub",
+  "git-company": "SivH",
+  "repository-name": "GTBee"
+}
