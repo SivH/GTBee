@@ -1,0 +1,30 @@
+{
+    "gtBeeApp": {
+        "gTBactivity": {
+            "home": {
+                "title": "GT Bactivities",
+                "createLabel": "GT Bactivity erstellen",
+                "createOrEditLabel": "GT Bactivity erstellen oder bearbeiten"
+            },
+            "created": "GT Bactivity erstellt mit ID {{ param }}",
+            "updated": "GT Bactivity aktualisiert mit ID {{ param }}",
+            "deleted": "GT Bactivity gelöscht mit ID {{ param }}",
+            "delete": {
+                "question": "Soll GT Bactivity {{ id }} wirklich dauerhaft gelöscht werden?"
+            },
+            "detail": {
+                "title": "GT Bactivity"
+            },
+            "activityName": "Activity Name",
+            "email": "Email",
+            "phoneNumber": "Phone Number",
+            "activityDate": "Activity Date",
+            "cost": "Cost",
+            "language": "Language",
+            "registration": "Registration",
+            "help": {
+                "activityName": "The firstname attribute."
+            }
+        }
+    }
+}
