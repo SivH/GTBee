@@ -40,6 +40,9 @@ public class CacheConfiguration {
             cm.createCache(com.sivh.gtbee.domain.User.class.getName() + ".authorities", jcacheConfiguration);
             cm.createCache(com.sivh.gtbee.domain.PersistentToken.class.getName(), jcacheConfiguration);
             cm.createCache(com.sivh.gtbee.domain.User.class.getName() + ".persistentTokens", jcacheConfiguration);
+            cm.createCache(com.sivh.gtbee.domain.GTBactivity.class.getName(), jcacheConfiguration);
+            cm.createCache(com.sivh.gtbee.domain.GTBactivity.class.getName() + ".registrations", jcacheConfiguration);
+            cm.createCache(com.sivh.gtbee.domain.Registration.class.getName(), jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }
