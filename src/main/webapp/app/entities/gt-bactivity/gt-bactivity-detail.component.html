@@ -1,0 +1,47 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="gTBactivity">
+            <h2><span jhiTranslate="gtBeeApp.gTBactivity.detail.title">GT Bactivity</span> {{gTBactivity.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="gtBeeApp.gTBactivity.activityName" [ngbTooltip]="'gtBeeApp.gTBactivity.help.activityName' | translate">Activity Name</span></dt>
+                <dd>
+                    <span>{{gTBactivity.activityName}}</span>
+                </dd>
+                <dt><span jhiTranslate="gtBeeApp.gTBactivity.email">Email</span></dt>
+                <dd>
+                    <span>{{gTBactivity.email}}</span>
+                </dd>
+                <dt><span jhiTranslate="gtBeeApp.gTBactivity.phoneNumber">Phone Number</span></dt>
+                <dd>
+                    <span>{{gTBactivity.phoneNumber}}</span>
+                </dd>
+                <dt><span jhiTranslate="gtBeeApp.gTBactivity.activityDate">Activity Date</span></dt>
+                <dd>
+                    <span>{{gTBactivity.activityDate}}</span>
+                </dd>
+                <dt><span jhiTranslate="gtBeeApp.gTBactivity.cost">Cost</span></dt>
+                <dd>
+                    <span>{{gTBactivity.cost}}</span>
+                </dd>
+                <dt><span jhiTranslate="gtBeeApp.gTBactivity.language">Language</span></dt>
+                <dd>
+                    <span jhiTranslate="{{'gtBeeApp.Language.' + gTBactivity.language}}">{{gTBactivity.language}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/gt-bactivity', gTBactivity.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

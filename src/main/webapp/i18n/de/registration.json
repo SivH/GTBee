@@ -1,0 +1,23 @@
+{
+    "gtBeeApp": {
+        "registration": {
+            "home": {
+                "title": "Registrations",
+                "createLabel": "Registration erstellen",
+                "createOrEditLabel": "Registration erstellen oder bearbeiten"
+            },
+            "created": "Registration erstellt mit ID {{ param }}",
+            "updated": "Registration aktualisiert mit ID {{ param }}",
+            "deleted": "Registration gelöscht mit ID {{ param }}",
+            "delete": {
+                "question": "Soll Registration {{ id }} wirklich dauerhaft gelöscht werden?"
+            },
+            "detail": {
+                "title": "Registration"
+            },
+            "registrationCode": "Registration Code",
+            "registrationDate": "Registration Date",
+            "gTBactivity": "G T Bactivity"
+        }
+    }
+}
