@@ -1,0 +1,49 @@
+{
+    "name": "GTBactivity",
+    "fields": [
+        {
+            "fieldName": "activityName",
+            "javadoc": "The firstname attribute.",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "email",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "phoneNumber",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "activityDate",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "cost",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "language",
+            "fieldType": "Language",
+            "fieldValues": "ENGLISH,GERMAN"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "registration",
+            "otherEntityName": "registration",
+            "otherEntityRelationshipName": "gTBactivity"
+        }
+    ],
+    "changelogDate": "20190209125945",
+    "javadoc": "The Employee entity.",
+    "entityTableName": "gt_bactivity",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

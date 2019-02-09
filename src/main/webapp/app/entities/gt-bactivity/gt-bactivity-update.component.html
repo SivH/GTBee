@@ -1,0 +1,58 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+            <h2 id="jhi-gt-bactivity-heading" jhiTranslate="gtBeeApp.gTBactivity.home.createOrEditLabel">Create or edit a GT Bactivity</h2>
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group" [hidden]="!gTBactivity.id">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id"
+                        [(ngModel)]="gTBactivity.id" readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gtBeeApp.gTBactivity.activityName" for="field_activityName" [ngbTooltip]="'gtBeeApp.gTBactivity.help.activityName' | translate">Activity Name</label>
+                    <input type="text" class="form-control" name="activityName" id="field_activityName"
+                        [(ngModel)]="gTBactivity.activityName" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gtBeeApp.gTBactivity.email" for="field_email">Email</label>
+                    <input type="text" class="form-control" name="email" id="field_email"
+                        [(ngModel)]="gTBactivity.email" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gtBeeApp.gTBactivity.phoneNumber" for="field_phoneNumber">Phone Number</label>
+                    <input type="text" class="form-control" name="phoneNumber" id="field_phoneNumber"
+                        [(ngModel)]="gTBactivity.phoneNumber" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gtBeeApp.gTBactivity.activityDate" for="field_activityDate">Activity Date</label>
+                    <div class="d-flex">
+                        <input id="field_activityDate" type="datetime-local" class="form-control" name="activityDate" [(ngModel)]="activityDate" placeholder="YYYY-MM-DD HH:mm"
+                        />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gtBeeApp.gTBactivity.cost" for="field_cost">Cost</label>
+                    <input type="number" class="form-control" name="cost" id="field_cost"
+                        [(ngModel)]="gTBactivity.cost" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="gtBeeApp.gTBactivity.language" for="field_language">Language</label>
+                    <select class="form-control" name="language" [(ngModel)]="gTBactivity.language" id="field_language" >
+                        <option value="ENGLISH">{{'gtBeeApp.Language.ENGLISH' | translate}}</option>
+                        <option value="GERMAN">{{'gtBeeApp.Language.GERMAN' | translate}}</option>
+                    </select>
+                </div>
+
+            </div>
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                    <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+                <button type="submit" id="save-entity" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
