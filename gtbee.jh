@@ -1,0 +1,34 @@
+
+
+/**
+ * The Employee entity.
+ */
+entity GTBactivity {
+	/**
+	* The firstname attribute.
+	*/
+	activityName String,
+	email String,
+	phoneNumber String,
+	activityDate Instant,
+	cost Long,
+    language Language
+}
+
+entity Registration {
+	registrationCode String,
+	registrationDate Instant
+}
+
+
+
+enum Language {
+    ENGLISH, GERMAN
+}
+
+
+// defining multiple OneToMany relationships with comments
+relationship OneToMany {
+	GTBactivity{registration} to Registration
+}
+
